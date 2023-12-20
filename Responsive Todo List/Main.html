@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Design.css">
+    <!-- Add Font Awesome CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="glass-container">
+        <h2>Todo List</h2>
+        <input type="text" id="taskInput" placeholder="Add a new task..." onkeydown="handleKeyPress(event)">
+        <button onclick="addTask()">Add Task</button>
+        <button onclick="clearHistory()"><i class="fas fa-trash"></i> Clear History</button>
+
+        <ul id="task-list"></ul>
+    </div>
+
+    <audio id="beep" preload="auto" src="https://www.youtube.com/watch?v=GvXbEO5Kbgc"></audio>
+    <script src="/Safe.js"></script>
+</body>
+</html>

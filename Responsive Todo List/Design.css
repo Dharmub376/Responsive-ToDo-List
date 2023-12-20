@@ -1,0 +1,90 @@
+/* Add Font Awesome icons styling */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://images.pexels.com/photos/10718307/pexels-photo-10718307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Add your background image */
+    background-size: cover;
+}
+
+.glass-container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.task-item {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.task-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.buttons i {
+    margin-right: 8px;
+    font-size: 16px;
+    color: #fff;
+    background: #e74c3c;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.buttons i.edit {
+    background: #3498db;
+}
+
+.buttons i:hover {
+    background: #c0392b;
+    color: #fff;
+}
